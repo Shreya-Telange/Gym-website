@@ -1,0 +1,98 @@
+.home-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slick-slide {
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.slide-content {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 2;
+  color: #fff;
+  text-align: left;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.main-heading {
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.main-heading span {
+  color: #f7931e; /* Accent color */
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #f7931e;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #d67818;
+}
+
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 14px;
+  color: white;
+}
+
+.slick-prev, .slick-next {
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev:before, .slick-next:before {
+  color: white;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 48px;
+  }
+  
+  .heading {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .slide-content {
+    top: 30%;
+  }
+}

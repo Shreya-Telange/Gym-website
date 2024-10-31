@@ -1,0 +1,86 @@
+.testimonials-section {
+  background: #111; /* Dark background similar to the one in your image */
+  color: #fff; /* Text color */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial-header h2 {
+  color: #f7931e; /* Orange color for subheading */
+  margin-bottom: 10px;
+}
+
+.testimonial-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent card */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-image img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.testimonial-content h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.testimonial-role {
+  color: #f7931e; /* Orange role text */
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.testimonial-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.testimonial-rating {
+  margin-top: 10px;
+}
+
+.testimonial-rating span {
+  color: #f7931e;
+}
+
+.testimonial-button {
+  margin-top: 40px;
+}
+
+.testimonial-button button {
+  padding: 10px 20px;
+  background-color: #f7931e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.testimonial-button button:hover {
+  background-color: #e68417;
+}

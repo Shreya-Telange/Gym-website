@@ -1,0 +1,161 @@
+/* About section styling */
+.about {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.about-image-slider {
+  flex: 1 1 40%;
+  position: relative;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.about-image-slider.image-fade-in .about-image {
+  opacity: 1;
+  transform: translateX(0);
+}
+.about-image-slider img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateX(-50px);
+  /* transition: transform 0.5s ease-in-out; */
+}
+
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-content button:hover {
+  background-color: #45a049;
+}
+
+.more-info {
+  margin-top: 20px;
+}
+
+.animate .about-content, .animate .about-image-slider img {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Gym Features section */
+.gym-features {
+  margin-top: 50px;
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.6s ease;
+}
+
+.gym-features h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.feature {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover img {
+  transform: scale(1.2); /* Enlarge the icon on hover */
+}
+
+.feature:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  background-color: #eef9f3;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.animate-features h3, .animate-features .features-grid {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr; /* Stack elements on top of each other for smaller screens */
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .gym-features h3 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea {
+  width: 100%;
+}

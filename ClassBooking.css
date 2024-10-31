@@ -1,0 +1,25 @@
+.class-booking {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .class-booking h2 {
+    text-align: center;
+  }
+  
+  .class-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .booked-classes {
+    margin-top: 20px;
+  }
+  
